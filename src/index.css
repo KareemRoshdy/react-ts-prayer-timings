@@ -30,6 +30,7 @@
   border: none;
   list-style: none;
   resize: none;
+  font-family: "Cairo", sans-serif;
 }
 
 html {

@@ -166,7 +166,7 @@ const MainContent = () => {
           </div>
         </Grid>
 
-        <Grid xs={6} style={{ padding: "10px 0" }}>
+        <Grid xs={6} style={{ padding: "20px 0" }}>
           <Box sx={{ minWidth: 120 }}>
             <form className="form" onSubmit={searchHandler}>
               <input
