@@ -48,7 +48,7 @@ body {
   overflow-x: hidden;
   font-family: "Cairo", sans-serif;
   z-index: 1;
-  /* animation: bg  100s linear infinite; */
+  animation: bg  100s linear infinite;
 }
 
 @keyframes bg {
@@ -63,7 +63,7 @@ body {
   }
 
   60%{
-    background: url(./assets/8.jpg) no-repeat;
+    background: url(./assets/3.jpg) no-repeat;
     background-size: cover;
   }
 

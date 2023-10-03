@@ -1,4 +1,4 @@
-import img from "../assets/1.jpg";
+import img from "../assets/8.jpg";
 
 type Props = {
   name: string;
