@@ -158,28 +158,32 @@ const MainContent = () => {
   return (
     <>
       {/* TOP ROW */}
-      <Grid container>
-        <Grid xs={6}>
-          <div>
-            <h1>{temp !== "" ? temp : "القاهرة"}</h1>
-            <p style={{ color: "var(--gray)" }}>{today}</p>
+      <div className="top">
+        <Grid container>
+          <Grid xs={6}>
+            <div>
+              <h1>{temp !== "" ? temp : "القاهرة"}</h1>
+              <p style={{ color: "var(--gray)" }}>{today}</p>
+            </div>
+          </Grid>
+
+          <div className="search">
+            <Grid xs={6} style={{ padding: "20px 0" }}>
+              <Box sx={{ minWidth: 120 }}>
+                <form className="form" onSubmit={searchHandler}>
+                  <input
+                    type="text"
+                    onChange={(e) => setSearch(e.target.value)}
+                    placeholder="اسم المدينة"
+                    value={search}
+                  />
+                  <button className="btn">بحث</button>
+                </form>
+              </Box>
+            </Grid>
           </div>
         </Grid>
-
-        <Grid xs={6} style={{ padding: "20px 0" }}>
-          <Box sx={{ minWidth: 120 }}>
-            <form className="form" onSubmit={searchHandler}>
-              <input
-                type="text"
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder="اسم المدينة"
-                value={search}
-              />
-              <button className="btn">بحث</button>
-            </form>
-          </Box>
-        </Grid>
-      </Grid>
+      </div>
       {/* TOP ROW */}
 
       <Divider style={{ background: `var(--gray)` }} />

@@ -161,6 +161,11 @@ body::after {
   background: var(--green) !important;
 }
 
+.top > div {
+  justify-content: space-between;
+}
+
+
 @keyframes loading {
   0% {
     transform: rotate(0deg);
@@ -177,6 +182,17 @@ body::after {
   }
 
   .content > div > div {
+    width: 100%;
+  }
+
+
+}
+
+@media (width <= 600px)  {
+  .top > div {
+    flex-direction: column;
+  }
+  .search > div{
     width: 100%;
   }
 }
